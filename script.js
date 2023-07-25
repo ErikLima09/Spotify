@@ -20,7 +20,7 @@ const maquinaDoTempo = {
     liked: false
 };
 const deixeMeIr = {
-    songName: 'Deixe-me Ir 2',
+    songName: 'Deixe-me Ir',
     artist: '1kilo',
     file: 'deixe-me_ir',
     liked: true
