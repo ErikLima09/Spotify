@@ -1,0 +1,110 @@
+
+body {
+    background-image: linear-gradient(
+        rgb(106, 39, 86),
+        rgb(24, 11, 20)
+    ); 
+    height: 100vh;
+    color: white;
+    font-family:sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    background-color: inherit;
+    color: inherit;
+    border: none;
+}
+
+
+/* -----ID's----- */
+
+#bellow-cover {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Dizer como os eleentos tem que se organizar no eixo principal do Display Flex */
+    align-items: center;
+    margin: 2.5em 0em 1em 0em;
+}
+
+#cover {
+    width: 400px;
+}
+
+#button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+#playlist-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 1em 0 4em 0;
+}
+
+#song-name{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#band-name{
+    font-size: 1em;
+    margin-top: 0.3em;
+}
+
+#progress-bar {
+    background-color: rgb(105, 74, 96);
+    height: 3px;
+    border-radius:15px;
+}
+
+#current-progress {
+    --progress: 0%;
+    background-color: white;
+    height: inherit;
+    width: var(--progress);
+    border-radius: inherit;
+}
+
+#progress-container {
+    cursor: pointer;
+}
+
+#time-box {
+    display: flex; /*informa como os elementos vão se dispor dentro da div*/
+    flex-direction: row; /*Direção de distribuição desses elementos */
+    justify-content: space-between; /*Como vou espaçar os elementos na dimensão principal (Linha no caso)*/
+    margin-top: 0.5em;
+    font-size: small;
+    color: rgb(199, 188, 197);
+}
+
+
+/* -----CLASSES----- */
+
+.light-color {
+    color: rgb(199, 188, 197);
+}
+
+.button {
+    font-size: 1.5em;
+    cursor:pointer;
+}
+
+.button-navigate {
+    font-size: 3em;
+}
+
+.button-biggest {
+    font-size: 4em;
+}
+
+.button-active {
+    color:rgb(22,184,94);
+}
