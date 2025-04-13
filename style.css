@@ -4,11 +4,6 @@ body {
         rgb(66, 66, 66),
         rgb(3, 3, 3)
     );
-
-    /*background-image: linear-gradient(
-        rgb(106, 39, 86),
-        rgb(24, 11, 20)
-    );*/
     height: 100vh;
     color: white;
     font-family:sans-serif;
