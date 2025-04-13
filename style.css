@@ -1,9 +1,14 @@
 
 body {
     background-image: linear-gradient(
+        rgb(66, 66, 66),
+        rgb(3, 3, 3)
+    );
+
+    /*background-image: linear-gradient(
         rgb(106, 39, 86),
         rgb(24, 11, 20)
-    ); 
+    );*/
     height: 100vh;
     color: white;
     font-family:sans-serif;
@@ -24,7 +29,7 @@ button {
 #bellow-cover {
     display: flex;
     flex-direction: row;
-    justify-content: space-between; /* Dizer como os eleentos tem que se organizar no eixo principal do Display Flex */
+    justify-content: space-between; /* Dizer como os elementos tem que se organizar no eixo principal do Display Flex */
     align-items: center;
     margin: 2.5em 0em 1em 0em;
 }
@@ -59,7 +64,7 @@ button {
 }
 
 #progress-bar {
-    background-color: rgb(105, 74, 96);
+    background-color: rgb(66, 66, 66);
     height: 3px;
     border-radius:15px;
 }
@@ -84,7 +89,6 @@ button {
     font-size: small;
     color: rgb(199, 188, 197);
 }
-
 
 /* -----CLASSES----- */
 

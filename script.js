@@ -13,16 +13,18 @@ const songTime          = document.getElementById('song-time');
 const totalTime         = document.getElementById('total-time');
 const likeButton        = document.getElementById('like');
 
-const maquinaDoTempo = {
-    songName: 'Máquina Do Tempo',
-    artist: 'Matuê',
-    file: 'maquina_do_tempo',
+localStorage.clear();
+
+const dontyouWorryChild = {
+    songName: 'Dont You Worry Child',
+    artist: 'Swedish House Mafia ft. John Martin',
+    file: 'dont_you_worry_child',
     liked: false
 };
-const deixeMeIr = {
-    songName: 'Deixe-me Ir',
-    artist: '1kilo',
-    file: 'deixe-me_ir',
+const wakeMeUp = {
+    songName: 'Wake me Up',
+    artist: 'Avicii',
+    file: 'wake_me_up',
     liked: true
 };
 const alorsOnDanse = {
@@ -60,9 +62,22 @@ let isPlayng = false;
 let isShuffled = false;
 let repeatOn = false;
 let playlist = JSON.parse(localStorage.getItem('playlist'));
-let sortedPlaylist = [...playlist]; // Os ... significa "espalhar"
-let index = 0;
 
+if (!playlist) {
+    playlist = [
+        dontyouWorryChild,
+        wakeMeUp,
+        alorsOnDanse,
+        cupidsChokehold,
+        iDontKnow,
+        ifIloseMyself,
+        lamourToujours
+    ];
+    localStorage.setItem('playlist', JSON.stringify(playlist));
+}
+
+let sortedPlaylist = [...playlist];
+let index = 0;
 
 function playSong() {
     play.querySelector('.bi').classList.remove('bi-play-circle-fill');
@@ -200,7 +215,6 @@ function likeButtonClicked() {
     localStorage.setItem('playlist', JSON.stringify(playlist)); // Registre um item
     
 }
-
 
 initializeSong();
 
